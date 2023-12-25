@@ -1,10 +1,40 @@
 <div class="bg-cl shadow-lg">
   <div class="container experience-section">
-    <div class="d-flex justify-content-center h5 pb-1 text-cl">
+    <div class="d-flex justify-content-center h4 pb-1 text-cl">
       <strong>Experience</strong>
     </div>
 
-    <br />
+    <ng-container *ngFor="let experience of experiences">
+      <div class="h5 text-muted">
+        <strong class="text-decoration-underline">
+          {{ experience.company }}</strong
+        ><span>
+          &nbsp;
+          <span class="text-secondary">{{ experience.location }}</span></span
+        >
+      </div>
+      <ng-container *ngFor="let role of experience.roles">
+        <div class="d-flex justify-content-between text-secondary px-1">
+          <div>
+            <strong>{{ role.designation }}</strong>
+          </div>
+          <small
+            ><strong
+              >{{ role.startMonth }} - {{ role.endMonth }} &nbsp; &nbsp;{{
+                role.duration
+              }}</strong
+            ></small
+          >
+        </div>
+
+        <div class="px-4 text-secondary">
+          <ul *ngFor="let roleDetail of role.details">
+            <li class="lh-base">{{ roleDetail }}</li>
+          </ul>
+        </div>
+      </ng-container>
+      <br />
+    </ng-container>
     <br />
   </div>
 </div>
