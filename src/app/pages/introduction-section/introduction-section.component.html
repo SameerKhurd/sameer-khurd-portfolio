@@ -1,0 +1,93 @@
+<div class="bg-cl">
+  <div class="container">
+    <!-- Introduction -->
+    <div class="introduction">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="display-4 pb-1 text-cl">
+            <strong>Sameer Khurd</strong>
+          </div>
+          <div class="h5 text-secondary">
+            <strong> Full Stack Software Engineer | Cloud | DevOps </strong>
+          </div>
+
+          <div class="pt-2">
+            <span class="badge-custom rounded-pill shadow-sm">
+              <a
+                href="https://www.credly.com/badges/202bc004-6c00-49fd-b2a7-87d5ab1f23ed/public_url"
+                target="_blank"
+                class="text-secondary"
+              >
+                <img
+                  class="icon align-middle"
+                  src="./assets/images/icons/award-icon.png"
+                  alt="Cerificate icon"
+                />AWS Certified Solutions Archirtect Associate</a
+              >&nbsp;
+            </span>
+            &nbsp;&nbsp;
+            <span class="badge-custom rounded-pill text-secondary shadow-sm">
+              <img
+                class="icon align-middle"
+                src="./assets/images/icons/graduate-icon.png"
+                alt="Cerificate icon"
+              />M. Tech IIIT-Bangalore &nbsp;
+            </span>
+            <!-- <span class="badge-custom rounded-pill text-secondary">
+              <img
+                  class="icon align-middle" style="height: 15px; width: 15px;"
+                  src="./assets/images/icons/star-icon-1.png"
+                  alt="Cerificate icon"
+                />3+ Years Experience
+            </span> -->
+          </div>
+          <br />
+
+          <!-- <div class="d-inline-block px-1 text-secondary">
+            <strong>3+</strong>
+          </div>
+          <div class="d-inline-block text-secondary h6">
+            <strong><small>Years Experience</small></strong>
+          </div> -->
+          <div class="pt-2 text-muted border-top pe-5">
+            I'm a passionate computer science engineer with a relentless drive
+            to learn and grow. I thrive on challenges and actively seek
+            opportunities to contribute my skills.
+            <br />
+            <br />
+            Over the course of my 3+ years in the dynamic world of technology,
+            I've had the privilege of working on diverse projects, each
+            presenting unique challenges that have further honed my abilities.
+            <br />
+            <br />
+            My journey has equipped me with proficiency in various areas, from
+            Full Stack development to Microservices architecture, AWS cloud and
+            expertise in tools such as Angular, Flask, Docker and Kubernetes.
+            I'm deeply enthusiastic about designing and developing robust,
+            scalable solutions, always striving to deliver seamless user
+            experiences.
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img
+            class="profile-img"
+            src="./assets/images/profile-pic-1.png"
+            alt="Profile Picture"
+          />
+        </div>
+      </div>
+      <br />
+      <div class="d-flex justify-content-center p-2">
+        <div class="px-3 text-secondary" *ngFor="let tool of tools">
+          <img
+            class="tool-icon align-middle"
+            src="./assets/images/tool-icons/{{ tool.icon }}"
+            [alt]="'{{tool.label}} icon'"
+          />
+          <strong class="align-middle mx-auto">{{ tool.label }}</strong>
+        </div>
+      </div>
+    </div>
+    <br />
+  </div>
+</div>
