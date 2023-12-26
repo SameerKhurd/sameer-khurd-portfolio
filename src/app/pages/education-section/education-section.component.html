@@ -1,0 +1,37 @@
+<div class="bg-cl shadow-lg">
+  <div class="container education-section">
+    <br />
+    <div
+      class="d-flex justify-content-center h4 pb-1 text-cl text-decoration-underline"
+    >
+      <strong>Education</strong>
+    </div>
+    <br />
+
+    <div class="container ms-4">
+      <ul class="timeline-1 text-black shadow-sm">
+        <li
+          class="event"
+          attr.data-date="{{ qualification.date }}"
+          *ngFor="let qualification of qualifications"
+        >
+          <h5 class="text-secondary">
+            <strong> {{ qualification.title }} </strong>
+          </h5>
+          <h6 class="text-secondary">
+            {{ qualification.subTitle }}
+          </h6>
+          <ng-container *ngFor="let detail of qualification.details">
+            <div>
+              <span class="custom-text-tertiary"
+                ><em> - {{ detail }}</em></span
+              >
+            </div>
+          </ng-container>
+        </li>
+      </ul>
+    </div>
+
+    <br />
+  </div>
+</div>

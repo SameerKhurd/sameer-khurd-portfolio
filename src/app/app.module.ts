@@ -6,13 +6,17 @@ import { HomeComponent } from './pages/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { IntroductionSectionComponent } from './pages/introduction-section/introduction-section.component';
 import { ExperienceSectionComponent } from './pages/experience-section/experience-section.component';
+import { ProjectSectionComponent } from './pages/project-section/project-section.component';
+import { EducationSectionComponent } from './pages/education-section/education-section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     IntroductionSectionComponent,
-    ExperienceSectionComponent
+    ExperienceSectionComponent,
+    ProjectSectionComponent,
+    EducationSectionComponent
   ],
   imports: [
     BrowserModule,
