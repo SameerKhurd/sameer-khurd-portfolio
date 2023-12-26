@@ -35,13 +35,17 @@ export class IntroductionSectionComponent {
       label: 'Javascript',
       icon: 'javascript-icon.svg',
     },
-    {
-      label: 'Git',
-      icon: 'git-icon.svg',
-    },
+    // {
+    //   label: 'Git',
+    //   icon: 'git-icon.svg',
+    // },
     {
       label: 'MySQL',
       icon: 'mysql-icon.svg',
+    },
+    {
+      label: 'UI/UX',
+      icon: 'ui-ux-icon-1.png',
     },
   ];
 }

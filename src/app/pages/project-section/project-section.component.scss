@@ -1,0 +1,22 @@
+.project-section {
+  //margin-top: 75px;
+  padding: 16px 30px;
+  min-height: 250px;
+  font-family: VarelaRound, Arial, Helvetica, sans-serif;
+}
+
+.project-img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.badge-custom {
+  background-color: #eee;
+  padding: 4px 8px;
+  font-size: small;
+  margin: 3px 3px;
+}
+.row-border {
+  border-top: 10px solid #dededed7;
+  //background-color: #ff7b0007;
+}

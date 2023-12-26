@@ -25,7 +25,7 @@ export class ExperienceSectionComponent {
           designation: 'Research Engineer',
           startMonth: 'Aug 2021',
           endMonth: '*Current',
-          duration: '(*2.5 years)',
+          duration: '(2.5 years)',
           details: [
             'Skills: Docker · RESTful WebServices · Angular · Flask · Fabric.js ·          Full-Stack Development · Amazon Web Services (AWS) · Microservices ·          DevOps · Kubernetes',
           ],
@@ -33,7 +33,7 @@ export class ExperienceSectionComponent {
         {
           designation: 'Research Intern',
           startMonth: 'Dec 2020',
-          endMonth: 'June 2021',
+          endMonth: 'Jun 2021',
           duration: '(6 months)',
           details: [
             ' Demonstrated proficiency in full-stack development by crafting RESTful           APIs with Flask (Python) on the backend and creating interactive           frontends with the Angular Framework.',
@@ -52,7 +52,7 @@ export class ExperienceSectionComponent {
         {
           designation: 'Software Development Engineer - Intern',
           startMonth: 'Jan 2018',
-          endMonth: 'June 2018',
+          endMonth: 'Jun 2018',
           duration: '(6 months)',
           details: [
             ' Developed a solution to identify missing inode flags and extended attributes during file backup and restoration across different file systems',

@@ -1,6 +1,9 @@
 <div class="bg-cl shadow-lg">
   <div class="container experience-section">
-    <div class="d-flex justify-content-center h4 pb-1 text-cl">
+    <br />
+    <div
+      class="d-flex justify-content-center h4 pb-1 text-cl text-decoration-underline"
+    >
       <strong>Experience</strong>
     </div>
 
@@ -13,28 +16,34 @@
           <span class="text-secondary">{{ experience.location }}</span></span
         >
       </div>
-      <ng-container *ngFor="let role of experience.roles">
-        <div class="d-flex justify-content-between text-secondary px-1">
-          <div>
-            <strong>{{ role.designation }}</strong>
-          </div>
-          <small
-            ><strong
-              >{{ role.startMonth }} - {{ role.endMonth }} &nbsp; &nbsp;{{
-                role.duration
-              }}</strong
-            ></small
-          >
-        </div>
+      <ng-container>
+        <ul class="timeline-3">
+          <li *ngFor="let role of experience.roles" class="current">
+            <div class="row px-1 text-secondary">
+              <div class="col-md-8">
+                <strong>{{ role.designation }}</strong>
+              </div>
+              <div class="col-md-4">
+                <small
+                  ><span class="badge bg-secondary rounded-pill float-end"
+                    >{{ role.startMonth }} &nbsp; &ndash; &nbsp;{{
+                      role.endMonth
+                    }}
+                    &nbsp; &nbsp;{{ role.duration }}</span
+                  ></small
+                >
+              </div>
+            </div>
 
-        <div class="px-4 text-secondary">
-          <ul *ngFor="let roleDetail of role.details">
-            <li class="lh-base">{{ roleDetail }}</li>
-          </ul>
-        </div>
+            <div class="px-4 text-secondary">
+              <ul *ngFor="let roleDetail of role.details">
+                <li class="lh-base">{{ roleDetail }}</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
       </ng-container>
       <br />
     </ng-container>
-    <br />
   </div>
 </div>
