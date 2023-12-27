@@ -6,7 +6,67 @@
     >
       <strong>Projects</strong>
     </div>
-    <div class="card mb-3 border bg-cl mx-4" *ngFor="let project of projects">
+    <div class="row">
+      <div class="col-md-4 p-3" *ngFor="let project of projects">
+        <div class="bg-white rounded-3 border shadow-sm">
+          <div
+            *ngIf="project.imagePath; else noImageTemplate"
+            class="text-center rounded-top border-bottom border-2"
+          >
+            <a href="{{ project.demoLink }}" target="_blank">
+              <img
+                src="./assets/images/projects/{{ project.imagePath }}"
+                class="img-fluid custom-image rounded-2"
+            /></a>
+          </div>
+          <ng-template #noImageTemplate>
+            <div
+              class="bg-secondary p-2 rounded-top border-bottom border-2"
+            ></div>
+          </ng-template>
+
+          <div class="px-3 pt-3 text-secondary h6 card-text">
+            <strong>{{ project.title }}</strong>
+          </div>
+          <div class="px-3 text-secondary h6 card-text">
+            <small>
+              <p *ngFor="let projectDetail of project.details">
+                {{ projectDetail }}
+              </p>
+            </small>
+          </div>
+
+          <div class="px-2 pb-3 card-text lh-sm" *ngIf="project.technologies">
+            <div
+              class="rounded-pill badge-custom h6 text-secondary d-inline-block"
+              *ngFor="let projectTechnologies of project.technologies"
+            >
+              {{ projectTechnologies }}
+            </div>
+          </div>
+          <div
+            class="card-text lh-sm pb-3 px-3"
+            *ngIf="project.demoLink || project.githubLink"
+          >
+            <small>
+              <ng-container *ngIf="project.demoLink">
+                <a href="{{ project.demoLink }}" target="_blank">
+                  Demo<i class="bi bi-box-arrow-up-right ps-1"></i
+                ></a>
+                &nbsp; | &nbsp;
+              </ng-container>
+              <a
+                href="{{ project.githubLink }}"
+                target="_blank"
+                *ngIf="project.githubLink"
+                >Github</a
+              >
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="card mb-3 border bg-cl mx-4" *ngFor="let project of projects">
       <div class="row g-0 row-border">
         <div class="col-md-4" *ngIf="project.imagePath">
           <a href="{{ project.demoLink }}" target="_blank">
@@ -20,14 +80,16 @@
           <div class="card-body text-secondary">
             <h6 class="card-title">
               <strong>{{ project.title }}</strong>
-              <small class="float-end"
-                ><em>{{ project.endDate }}</em></small
-              >
+              <h6 class="float-end">
+                <strong>
+                  <em>{{ project.endDate }}</em></strong
+                >
+              </h6>
             </h6>
             <div class="card-text lh-sm">
               <ul>
-                <li class="lh-sm" *ngFor="let prjectDetail of project.details">
-                  {{ prjectDetail }}
+                <li class="lh-sm" *ngFor="let projectDetail of project.details">
+                  {{ projectDetail }}
                 </li>
               </ul>
             </div>
@@ -59,6 +121,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>

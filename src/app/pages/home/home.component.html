@@ -1,5 +1,8 @@
 <!-- As a heading -->
-<nav class="navbar navbar-expand-lg sticky-top bg-cl shadow-sm custom-font">
+<nav
+  id="main-navbar"
+  class="navbar navbar-expand-lg sticky-top bg-cl shadow-sm custom-font"
+>
   <div class="container py-0 my-0">
     <a class="navbar-brand text-secondary" href="#"
       ><span>
@@ -22,49 +25,53 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
+    <div class="collapse navbar-collapse ps-5" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-secondary">
+        <li class="nav-item px-1">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+        <li class="nav-item px-1">
+          <a class="nav-link" href="#experience">Experience</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+        <li class="nav-item px-1">
+          <a class="nav-link" href="#projects">Projects</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <li class="nav-item px-1">
+          <a class="nav-link" href="#education">Education</a>
+        </li>
+        <li class="nav-item px-1">
+          <a class="nav-link" href="#contact">Contact & References</a>
         </li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div> -->
+    </div>
+    <a class="btn btn-outline-success" href="#contact"> Contact Me </a>
   </div>
 </nav>
 
-<app-introduction-section></app-introduction-section>
-
-<app-experience-section></app-experience-section>
-
-<app-project-section></app-project-section>
-
-<app-education-section></app-education-section>
-
-<div class="bg-cl">
-  <br />
-  <br />
+<div
+  data-bs-spy="scroll"
+  data-bs-target="#main-navbar"
+  data-bs-offset="0"
+  class="scrollspy-example"
+  tabindex="0"
+>
+  <div id="#">
+    <app-introduction-section></app-introduction-section>
+  </div>
+  <div id="experience">
+    <app-experience-section></app-experience-section>
+  </div>
+  <div id="projects">
+    <app-project-section></app-project-section>
+  </div>
+  <div id="education">
+    <app-education-section></app-education-section>
+  </div>
+  <div id="contact">
+    <app-contact-section></app-contact-section>
+  </div>
 </div>
+
 <!-- <div class="row px-2 m-4">
     <div class="col-md-3 m-6 rounded shadow-lg bg-success" style="height: 100vw">
       s

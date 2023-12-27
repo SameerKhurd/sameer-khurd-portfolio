@@ -16,7 +16,13 @@
   font-size: small;
   margin: 3px 3px;
 }
+
 .row-border {
-  border-top: 10px solid #dededed7;
+  border-left: 10px solid #dededed7;
   //background-color: #ff7b0007;
+}
+
+.custom-image {
+  height: 250px;
+  object-fit: cover;
 }
