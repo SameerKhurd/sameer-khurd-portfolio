@@ -9,9 +9,16 @@
 
     <ng-container *ngFor="let experience of experiences">
       <div class="h5 text-secondary">
-        <strong class="text-decoration-underline">
-          {{ experience.company }}</strong
-        ><span>
+        <strong>
+          <a
+            [href]="experience.companyWebsite"
+            target="_blank"
+            class="text-secondary"
+            title="Open company website"
+            >{{ experience.company }}</a
+          ></strong
+        >
+        <span>
           &nbsp;
           <span class="h6 text-secondary">{{ experience.location }}</span></span
         >
@@ -21,10 +28,13 @@
           <li *ngFor="let role of experience.roles" class="current">
             <div class="row px-1 text-secondary">
               <div class="col-md-8">
-                <h6> <strong>{{ role.designation }}</strong></h6>
+                <h6>
+                  <strong>{{ role.designation }}</strong>
+                </h6>
               </div>
               <div class="col-md-4">
-                <span class="badge h6 custom-bg-secondary rounded-pill float-end text-secondary "
+                <span
+                  class="badge h6 custom-bg-secondary rounded-pill float-end text-secondary"
                   >{{ role.startMonth }} &nbsp; &ndash; &nbsp;{{
                     role.endMonth
                   }}

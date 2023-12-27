@@ -3,6 +3,7 @@ import { Experience } from '../interfaces/experience.interface';
 export const experiences: Experience[] = [
   {
     company: 'Siemens Technology India',
+    companyWebsite: 'https://www.siemens.com/',
     location: 'Bengaluru, India',
     roles: [
       {
@@ -31,6 +32,7 @@ export const experiences: Experience[] = [
   },
   {
     company: 'Veritas Technologies LLC',
+    companyWebsite: 'https://www.veritas.com/',
     location: 'Pune, India',
     roles: [
       {

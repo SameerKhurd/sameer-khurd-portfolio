@@ -25,4 +25,58 @@
 .custom-image {
   height: 250px;
   object-fit: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #f0623e52;
+  //background-image: linear-gradient( 135deg, #ffd3a57c 10%, #FD65857c 100%);
+  background-image: linear-gradient(90deg, #141e30 10%, #243b55 100%);
+}
+
+.custom-image:hover {
+  background-size: 150%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.new {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  background-image: linear-gradient(
+    180deg,
+    hsla(0, 10%, 35.29%, 0) 0%,
+    hsla(0, 10%, 34.53%, 0) 16.36%,
+    hsla(0, 10%, 32.42%, 0.1) 33.34%,
+    hsla(0, 10%, 29.18%, 0.2) 50.1%,
+    hsla(0, 10%, 24.96%, 0.4) 65.75%,
+    hsla(0, 10%, 19.85%, 0.65) 79.43%,
+    hsla(0, 10%, 13.95%, 0.75) 90.28%,
+    hsla(0, 10%, 7.32%, 0.75) 97.43%,
+    hsla(0, 10%, 0%, 0.75) 100%
+  );
+  text-decoration: none;
+}
+
+.new:hover {
+  background-image: linear-gradient(
+    180deg,
+    hsla(0, 10%, 35.29%, 0) 0%,
+    hsla(0, 10%, 35.29%, 0) 0%,
+    hsla(0, 10%, 34.53%, 0) 16.36%,
+    hsla(0, 10%, 32.42%, 0.05) 33.34%,
+    hsla(0, 10%, 29.18%, 0.1) 50.1%,
+    hsla(0, 10%, 24.96%, 0.4) 65.75%,
+    hsla(0, 10%, 19.85%, 0.8) 79.43%,
+    hsla(0, 10%, 13.95%, 0.8) 90.28%,
+    hsla(0, 10%, 7.32%, 0.82) 97.43%,
+    hsla(0, 10%, 0%, 0.8) 100%
+  );
 }

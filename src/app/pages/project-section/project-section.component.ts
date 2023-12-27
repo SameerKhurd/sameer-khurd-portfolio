@@ -9,4 +9,12 @@ import { projects } from 'src/app/shared/data/project.data';
 })
 export class ProjectSectionComponent {
   projects: Project[] = projects;
+
+  getImagePath(path: string): string {
+    return `url(assets/images/projects/${path})`;
+  }
+
+  getLink(link: string | undefined): string {
+    return link ? link : 'javascript:void(0)';
+  }
 }
