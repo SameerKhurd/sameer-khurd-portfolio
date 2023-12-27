@@ -8,6 +8,7 @@ import { IntroductionSectionComponent } from './pages/introduction-section/intro
 import { ExperienceSectionComponent } from './pages/experience-section/experience-section.component';
 import { ProjectSectionComponent } from './pages/project-section/project-section.component';
 import { EducationSectionComponent } from './pages/education-section/education-section.component';
+import { ContactSectionComponent } from './pages/contact-section/contact-section.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,11 @@ import { EducationSectionComponent } from './pages/education-section/education-s
     IntroductionSectionComponent,
     ExperienceSectionComponent,
     ProjectSectionComponent,
-    EducationSectionComponent
+    EducationSectionComponent,
+    ContactSectionComponent,
   ],
-  imports: [
-    BrowserModule,
-    NgbModule
-  ],
+  imports: [BrowserModule, NgbModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
