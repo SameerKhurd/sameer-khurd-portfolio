@@ -32,6 +32,10 @@ export class IntroductionSectionComponent {
       icon: 'kubernets-icon.svg',
     },
     {
+      label: 'Microservices',
+      icon: 'microservices-icon.png',
+    },
+    {
       label: 'Javascript',
       icon: 'javascript-icon.svg',
     },
@@ -39,18 +43,33 @@ export class IntroductionSectionComponent {
       label: 'Git',
       icon: 'git-icon.svg',
     },
+
     {
-      label: 'MySQL',
-      icon: 'mysql-icon.svg',
+      label: 'Flask',
+      icon: 'flask-icon.svg',
     },
+
+    {
+      label: 'Node.js',
+      icon: 'nodejs-icon-2.png',
+    },
+
+    {
+      label: 'HTML',
+      icon: 'html-5-icon.svg',
+    },
+    {
+      label: 'CSS',
+      icon: 'css-3-icon.svg',
+    },
+
     {
       label: 'UI/UX',
       icon: 'ui-ux-icon-1.png',
     },
-
     {
-      label: 'Microservices',
-      icon: 'microservices-icon.png',
+      label: 'MySQL',
+      icon: 'mysql-icon.svg',
     },
     {
       label: 'CI/CD',
