@@ -35,10 +35,10 @@ export class IntroductionSectionComponent {
       label: 'Javascript',
       icon: 'javascript-icon.svg',
     },
-    // {
-    //   label: 'Git',
-    //   icon: 'git-icon.svg',
-    // },
+    {
+      label: 'Git',
+      icon: 'git-icon.svg',
+    },
     {
       label: 'MySQL',
       icon: 'mysql-icon.svg',
@@ -46,6 +46,15 @@ export class IntroductionSectionComponent {
     {
       label: 'UI/UX',
       icon: 'ui-ux-icon-1.png',
+    },
+
+    {
+      label: 'Microservices',
+      icon: 'microservices-icon.png',
+    },
+    {
+      label: 'CI/CD',
+      icon: 'ci-cd-icon.svg',
     },
   ];
 }
