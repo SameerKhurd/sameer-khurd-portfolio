@@ -8,7 +8,7 @@
     </div>
 
     <ng-container *ngFor="let experience of experiences">
-      <div class="h5 text-secondary">
+      <div class="h5 text-secondary d-inline-block pe-3">
         <strong>
           <a
             [href]="experience.companyWebsite"
@@ -18,32 +18,30 @@
             >{{ experience.company }}</a
           ></strong
         >
-        <span>
-          &nbsp;
-          <span class="h6 text-secondary">{{ experience.location }}</span></span
-        >
+      </div>
+      <div class="h6 text-secondary d-inline-block">
+        {{ experience.location }}
       </div>
       <ng-container>
         <ul class="timeline-3">
-          <li *ngFor="let role of experience.roles" class="current">
-            <div class="row px-1 text-secondary">
-              <div class="col-md-8">
-                <h6>
-                  <strong>{{ role.designation }}</strong>
-                </h6>
+          <li *ngFor="let role of experience.roles">
+            <div
+              class="d-flex justify-content-between flex-wrap px-1 text-secondary"
+            >
+              <div class="col-md-8 h6">
+                <strong>{{ role.designation }}</strong>
               </div>
-              <div class="col-md-4">
-                <span
-                  class="badge h6 custom-bg-secondary rounded-pill float-end text-secondary"
-                  >{{ role.startMonth }} &nbsp; &ndash; &nbsp;{{
-                    role.endMonth
-                  }}
-                  &nbsp; &nbsp;{{ role.duration }}</span
-                >
+              <div
+                class="badge h6 custom-bg-secondary rounded-pill f text-secondary"
+              >
+                {{ role.startMonth }} &nbsp; &ndash; &nbsp;{{
+                  role.endMonth
+                }}
+                &nbsp; &nbsp;{{ role.duration }}
               </div>
             </div>
 
-            <div class="px-4 text-secondary">
+            <div class="text-secondary">
               <ul *ngFor="let roleDetail of role.details">
                 <li class="lh-base">{{ roleDetail }}</li>
               </ul>

@@ -9,6 +9,12 @@
   width: 100%;
   max-width: 400px;
   height: auto;
+  transition: all ease 0.3s;
+}
+
+.profile-img:hover {
+  //scale: 1.07;
+  filter: blur(3px);
 }
 
 .tool-icon {
@@ -30,4 +36,36 @@
   padding: 6px 12px;
   font-size: small;
   margin: 8px 0px;
+}
+
+.custom-container {
+  position: relative;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00000080;
+
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: 0.3s ease;
+}
+
+.custom-container:hover .overlay {
+  width: 100%;
 }
