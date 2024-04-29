@@ -1,6 +1,13 @@
-# SameerKhurdPortfolio
+# Sameer Khurd Personal Website 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
+
+Website showcasing the profile information of Sameer Khurd.
+Angular web application developed using reusable and configurable components. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
+
+
+![Alt text](src/assets/meta/portfolio-preview.png)
+
+
 
 ## Development server
 
