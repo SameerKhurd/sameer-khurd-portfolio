@@ -2,6 +2,24 @@ import { Project } from '../interfaces/project.interface';
 
 export const projects: Project[] = [
   {
+    title: 'AlgoBytes: LeetCode-like Coding Platform [Full Stack]',
+    endDate: 'May 2024',
+    imagePath: 'algobytes-banner.png',
+    details: [
+      'Full Stack LeetCode-like platform for coding challenges, featuring user, question, code, submission management and execution functionalities, demonstrating scalable system design.',
+    ],
+    technologies: [
+      'GCP Cloud Functions (Serverless)',
+      'Angular',
+      'GCP Firestore (NoSQL)',
+      'Python',
+      'Firebase Hosting',
+    ],
+    demoLink: 'https://algobytes.web.app/',
+    githubLink: 'https://github.com/SameerKhurd/algo-bytes',
+    blog: 'https://github.com/SameerKhurd/algo-bytes',
+  },
+  {
     title: 'COVID-19 India Dashboard Cross-Platform App',
     endDate: 'Jul 2021',
     imagePath: 'cil_ln_img.png',

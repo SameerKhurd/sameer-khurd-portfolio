@@ -6,4 +6,5 @@ export interface Project {
   technologies?: string[];
   demoLink?: string;
   githubLink?: string;
+  blog?: string;
 }

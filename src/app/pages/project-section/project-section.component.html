@@ -60,8 +60,7 @@
                   target="_blank"
                   title="Open application"
                 >
-                  Demo<i class="bi bi-box-arrow-up-right ps-1"></i
-                ></a>
+                  Demo</a>
                 &nbsp; | &nbsp;
               </ng-container>
               <a
@@ -71,6 +70,12 @@
                 *ngIf="project.githubLink"
                 >Github</a
               >
+              <ng-container *ngIf="project.blog">
+                &nbsp; | &nbsp;
+                <a href="{{ project.blog }}" target="_blank" title="Open blog">
+                  Blog</a
+                >
+              </ng-container>
             </small>
           </div>
         </div>

@@ -1,0 +1,61 @@
+<div class="bg-cl shadow-lg">
+  <div class="container-fluid skills">
+    <div
+      class="d-flex justify-content-center h3 py-1 text-cl text-decoration-underline"
+    >
+      <strong>Skills</strong>
+    </div>
+    <div class="d-flex justify-content-center fs-6 text-secondary">
+      <div>
+        <div
+          class="text-center py-3 pb-4  d-flex flex-wrap justify-content-center"
+          style="color: #666"
+        >
+          <div class="badge-custom rounded-pill shadow-sm m-2 border fs-6">
+            Full Stack Development
+          </div>
+          <div
+            class="badge-custom rounded-pill shadow-sm m-2 text-nowrap1 border fs-6"
+          >
+            Microservice Architecture
+          </div>
+          <div
+            class="badge-custom rounded-pill shadow-sm m-2 text-nowrap border fs-6"
+          >
+            Cloud Technologies
+          </div>
+        </div>
+
+        <table>
+          <tr *ngFor="let skillsRow of skillsTables">
+            <td class="text-end p-1 fw-bold" style="color: #666">
+              {{ skillsRow.title }}
+            </td>
+            <td class="ps-5">{{ skillsRow.skills }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <br />
+
+    <div class="skills-slide pt-4">
+      <div class="skills-slide-content">
+        <div
+          class="pe-5 text-secondary d-inline-block"
+          *ngFor="let tool of tools"
+        >
+          <img
+            class="tool-icon align-middle"
+            src="./assets/images/tool-icons/{{ tool.icon }}"
+            alt="{{ tool.label }} icon"
+          />
+          <strong class="align-middle mx-auto fs-5 ps-2">{{
+            tool.label
+          }}</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <br />
+</div>

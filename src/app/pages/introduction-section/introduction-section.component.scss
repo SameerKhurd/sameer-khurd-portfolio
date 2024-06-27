@@ -1,20 +1,15 @@
 .introduction {
   //margin-top: 75px;
-  padding: 16px 20px;
+  padding: 16px 50px;
   min-height: 250px;
   font-family: VarelaRound, Arial, Helvetica, sans-serif;
 }
 
 .profile-img {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   height: auto;
   transition: all ease 0.3s;
-}
-
-.profile-img:hover {
-  //scale: 1.07;
-  filter: blur(3px);
 }
 
 .tool-icon {
@@ -33,7 +28,7 @@
 
 .badge-custom {
   background-color: #eee;
-  padding: 6px 12px;
+  padding: 8px 14px;
   font-size: small;
   margin: 8px 0px;
 }
@@ -59,6 +54,7 @@
   left: 0;
   right: 0;
   background-color: #00000080;
+  backdrop-filter: blur(10px);
 
   overflow: hidden;
   width: 0;
@@ -68,4 +64,47 @@
 
 .custom-container:hover .overlay {
   width: 100%;
+}
+
+.link-button {
+  height: 2.6rem;
+  width: 2.6rem;
+}
+
+.text-rotate-color {
+  background: linear-gradient(
+    -45deg,
+    #ec9913,
+    #d54d24,
+    #e73c7e,
+    #0c485d,
+    #0c9172
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 3s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.bg-rotate-color {
+  background: linear-gradient(
+    -45deg,
+    #ec9913,
+    #d54d24,
+    #e73c7e,
+    #0c485d,
+    #0c9172
+  );
+  background-size: 500% auto;
+  animation: textShine 3s ease-in-out infinite alternate;
 }
