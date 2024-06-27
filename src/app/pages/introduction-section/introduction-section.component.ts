@@ -6,74 +6,41 @@ import { Component } from '@angular/core';
   styleUrls: ['./introduction-section.component.scss'],
 })
 export class IntroductionSectionComponent {
-  tools: { label: string; icon: string }[] = [
+  linkButtons: {
+    iconSrc: string;
+    isImage: boolean;
+    url: string;
+    size?: string;
+    margin?: string;
+  }[] = [
     {
-      label: 'Angular',
-      icon: 'angular-icon.svg',
+      iconSrc: 'bi-linkedin',
+      isImage: false,
+      url: '',
     },
     {
-      label: 'Python',
-      icon: 'python-icon.svg',
+      iconSrc: 'bi-github',
+      isImage: false,
+      url: '',
     },
     {
-      label: 'Java',
-      icon: 'java-icon.svg',
+      iconSrc: 'bi-envelope-fill',
+      isImage: false,
+      url: '',
     },
     {
-      label: 'AWS',
-      icon: 'aws-icon.svg',
+      iconSrc: './assets/images/icons/leetcode-icon-gray.png',
+      isImage: true,
+      url: '',
+      size: '1.3rem',
+      margin: '-3px',
     },
     {
-      label: 'Docker',
-      icon: 'docker-icon.svg',
-    },
-    {
-      label: 'Kubernetes',
-      icon: 'kubernets-icon.svg',
-    },
-    {
-      label: 'Microservices',
-      icon: 'microservices-icon.png',
-    },
-    {
-      label: 'Javascript',
-      icon: 'javascript-icon.svg',
-    },
-    {
-      label: 'Git',
-      icon: 'git-icon.svg',
-    },
-
-    {
-      label: 'Flask',
-      icon: 'flask-icon.svg',
-    },
-
-    {
-      label: 'Node.js',
-      icon: 'nodejs-icon-2.png',
-    },
-
-    {
-      label: 'HTML',
-      icon: 'html-5-icon.svg',
-    },
-    {
-      label: 'CSS',
-      icon: 'css-3-icon.svg',
-    },
-
-    {
-      label: 'UI/UX',
-      icon: 'ui-ux-icon-1.png',
-    },
-    {
-      label: 'MySQL',
-      icon: 'mysql-icon.svg',
-    },
-    {
-      label: 'CI/CD',
-      icon: 'ci-cd-icon.svg',
+      iconSrc: './assets/images/icons/medium-icon-gray.png',
+      isImage: true,
+      url: '',
+      size: '1.9rem',
+      margin: '-6px',
     },
   ];
 }

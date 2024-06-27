@@ -9,6 +9,8 @@ import { ExperienceSectionComponent } from './pages/experience-section/experienc
 import { ProjectSectionComponent } from './pages/project-section/project-section.component';
 import { EducationSectionComponent } from './pages/education-section/education-section.component';
 import { ContactSectionComponent } from './pages/contact-section/contact-section.component';
+import { ArticleSectionComponent } from './pages/article-section/article-section.component';
+import { SkillsSectionComponent } from './pages/skills-section/skills-section.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { ContactSectionComponent } from './pages/contact-section/contact-section
     ProjectSectionComponent,
     EducationSectionComponent,
     ContactSectionComponent,
+    ArticleSectionComponent,
+    SkillsSectionComponent
   ],
   imports: [BrowserModule, NgbModule],
   providers: [],

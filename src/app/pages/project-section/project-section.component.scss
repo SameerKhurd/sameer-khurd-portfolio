@@ -28,13 +28,22 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: #f0623e52;
+  background-color: linear-gradient(90deg, #141e30 10%, #243b55 100%);
   //background-image: linear-gradient( 135deg, #ffd3a57c 10%, #FD65857c 100%);
   background-image: linear-gradient(90deg, #141e30 10%, #243b55 100%);
 }
 
 .custom-image:hover {
-  background-size: 150%;
+  animation: autoZoomAnimation 0.1s linear forwards;
+}
+
+@keyframes autoZoomAnimation {
+  0% {
+   background-size: 100%;
+  }
+  100% {
+    background-size: 150%;
+  }
 }
 
 a {
