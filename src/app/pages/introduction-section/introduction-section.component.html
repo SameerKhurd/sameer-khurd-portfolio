@@ -1,101 +1,115 @@
-<div class="bg-cl">
-  <div class="container">
-    <!-- Introduction -->
-    <div class="introduction">
-      <div class="row">
-        <div class="col-md-8">
-          <div class="display-4 pb-1 text-cl">
-            <strong style="text-shadow: 2px 2px #e9e9e9">Sameer Khurd</strong>
-          </div>
-          <div class="h5 text-secondary">
-            <strong> Full Stack Software Engineer | Cloud | DevOps </strong>
+<div
+  class="bg-cl"
+  style="background-image: url('assets/images/articles/temp.png')"
+>
+  <div style="backdrop-filter: blur(15px) invert(80%)">
+    <div class="container">
+      <!-- Introduction -->
+      <div class="introduction mx-2">
+        <div class="row">
+          <div class="col-md-5 fade-in-left">
+            <div class="fade-in-left pt-2">
+              <div class="h2 p-2 fade-in-left text-rotate-color">
+                <div class="display-1 pt-3">Let's</div>
+                <div class="display-6 pt-3">create</div>
+                <div class="display-4 pt-3">something</div>
+                <div class="display-1 pt-3">AMAZING</div>
+                <div class="h1 pt-3">together!</div>
+                <div class="p-4 w-75 mt-5 bg-rotate-color"></div>
+              </div>
+            </div>
           </div>
 
-          <div class="d-flex flex-wrap">
-            <div class="badge-custom rounded-pill shadow-sm me-2">
-              <a
-                href="https://www.credly.com/badges/202bc004-6c00-49fd-b2a7-87d5ab1f23ed/public_url"
-                target="_blank"
-                class="text-secondary"
-                title="Open AWS SAA-03 Certificate"
+          <div class="col-md-7 text-end fade-in-right">
+            <div class="d-flex justify-content-end">
+              <div
+                class="rounded-circle custom-container profile-img"
+                style="overflow: hidden"
+              >
+                <img
+                  class="profile-img"
+                  src="./assets/images/profile-picture.png"
+                  alt="Profile Picture"
+                />
+                <div class="overlay">
+                  <div class="text fs-1">Hey there! 🙋‍♂️</div>
+                </div>
+              </div>
+            </div>
+            <div class="display-2 pb-1 text-cl">
+              <strong>Sameer Khurd</strong>
+            </div>
+            <div class="h4 text-secondary p-1">
+              <strong> Full Stack Software Engineer </strong>
+            </div>
+
+            <div class="d-flex flex-wrap justify-content-end">
+              <div class="badge-custom bg-light rounded-pill shadow-sm mx-1">
+                <a
+                  href="https://www.credly.com/badges/202bc004-6c00-49fd-b2a7-87d5ab1f23ed/public_url"
+                  target="_blank"
+                  class="text-secondary"
+                  title="Open AWS SAA-03 Certificate"
+                >
+                  <img
+                    class="icon align-middle"
+                    src="./assets/images/icons/award-icon.png"
+                    alt="Cerificate icon"
+                  />AWS Certified Solutions Archirtect (SAA)</a
+                >&nbsp;
+              </div>
+              &nbsp;&nbsp;
+              <div
+                class="badge-custom bg-light rounded-pill text-secondary shadow-sm mx-1"
+                title="M.Tech in Computer Science and Engineering (2021), IIIT-Bangalore"
               >
                 <img
                   class="icon align-middle"
-                  src="./assets/images/icons/award-icon.png"
+                  src="./assets/images/icons/graduate-icon.png"
                   alt="Cerificate icon"
-                />AWS Certified Solutions Archirtect Associate</a
-              >&nbsp;
+                />M.Tech CS&nbsp; IIIT-Bangalore &nbsp;
+              </div>
             </div>
-            &nbsp;&nbsp;
-            <div
-              class="badge-custom rounded-pill text-secondary shadow-sm"
-              title="M.Tech in Computer Science and Engineering (2021), IIIT-Bangalore"
-            >
-              <img
-                class="icon align-middle"
-                src="./assets/images/icons/graduate-icon.png"
-                alt="Cerificate icon"
-              />M.Tech CS&nbsp; IIIT-Bangalore &nbsp;
-            </div>
-            <!-- <span class="badge-custom rounded-pill text-secondary">
-              <img
-                  class="icon align-middle" style="height: 15px; width: 15px;"
-                  src="./assets/images/icons/star-icon-1.png"
-                  alt="Cerificate icon"
-                />3+ Years Experience
-            </span> -->
-          </div>
 
-          <!-- <div class="d-inline-block px-1 text-secondary">
-            <strong>3+</strong>
-          </div>
-          <div class="d-inline-block text-secondary h6">
-            <strong><small>Years Experience</small></strong>
-          </div> -->
-          <div class="mt-2 pt-3 text-muted border-top">
-            I'm a passionate computer science engineer with a relentless drive
-            to learn and grow. I thrive on challenges and actively seek
-            opportunities to contribute my skills.
-            <br />
-            <br />
-            Over the course of my 3+ years in the dynamic world of technology,
-            I've had the privilege of working on diverse projects, each
-            presenting unique challenges that have further honed my abilities.
-            <br />
-            <br />
-            My journey has equipped me with proficiency in various areas, from
-            Full Stack development to Microservices architecture, AWS cloud and
-            expertise in tools such as Angular, Flask, Docker and Kubernetes.
-            I'm deeply enthusiastic about designing and developing robust,
-            scalable solutions, always striving to deliver seamless user
-            experiences.
-          </div>
-        </div>
-        <div class="col-md-4 text-center">
-          <div class="rounded-circle custom-container" style="overflow: hidden">
-            <img
-              class="profile-img"
-              src="./assets/images/profile-picture.png"
-              alt="Profile Picture"
-            />
-            <div class="overlay">
-              <div class="text fs-1">Hey there! 👋</div>
+            <div class="d-flex flex-wrap pt-3 justify-content-end">
+              <div class="p-1 pe-2" *ngFor="let linkButton of linkButtons">
+                <a
+                  [href]="linkButton.url"
+                  class="btn btn-light shadow link-button rounded-circle"
+                  target="_blank"
+                >
+                  <ng-container *ngIf="linkButton.isImage; else iconTemplate">
+                    <img
+                      class="custom-icon"
+                      [src]="linkButton.iconSrc"
+                      [style.height]="linkButton.size"
+                      [style.width]="linkButton.size"
+                      [style.margin-left]="linkButton.margin"
+                      alt=""
+                    />
+                  </ng-container>
+                  <ng-template #iconTemplate>
+                    <i
+                      class="bi text-secondary"
+                      style="font-size: 1.2rem"
+                      [ngClass]="linkButton.iconSrc"
+                    ></i>
+                  </ng-template>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <br />
-      <div class="d-flex justify-content-center flex-wrap py-2">
-        <div class="px-3 text-secondary" *ngFor="let tool of tools">
-          <img
-            class="tool-icon align-middle"
-            src="./assets/images/tool-icons/{{ tool.icon }}"
-            alt="{{ tool.label }} icon"
-          />
-          <strong class="align-middle mx-auto">{{ tool.label }}</strong>
+        <br />
+        <br />
+        <br />
+
+        <div class="m-2 p-3 bg-light border rounded-3">
+          <app-article-section></app-article-section>
         </div>
+
+        <br />
       </div>
     </div>
-    <br />
   </div>
 </div>

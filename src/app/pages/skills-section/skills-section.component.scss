@@ -1,0 +1,43 @@
+.tool-icon {
+  width: 32px;
+  height: 32px;
+  //padding: 4px;
+  padding: 3px;
+  //margin: 4px;
+}
+
+.skills {
+  //margin-top: 75px;
+  padding: 16px 50px;
+  font-family: VarelaRound, Arial, Helvetica, sans-serif;
+}
+
+.skills-slide {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  overflow: hidden;
+  opacity: 0.8;
+}
+
+.skills-slide .skills-slide-content {
+  white-space: nowrap;
+  animation: slide-left 25s linear infinite;
+  max-width: none;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translate(2%, 0);
+  }
+  100% {
+    transform: translate(-25%, 0);
+  }
+}
+
+.badge-custom {
+    background-color: #eee;
+    padding: 8px 14px;
+    font-size: small;
+    margin: 8px 0px;
+  }
