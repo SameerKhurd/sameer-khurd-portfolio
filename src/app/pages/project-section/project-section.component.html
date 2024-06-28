@@ -1,14 +1,14 @@
 <div class="bg-cl shadow-lg">
-  <div class="container project-section">
+  <div class="container-fluid project-section">
     <br />
     <div
-      class="d-flex justify-content-center h4 pb-1 text-cl text-decoration-underline"
+      class="d-flex justify-content-center h2 pb-1 text-cl text-decoration-underline"
     >
       <strong>Projects</strong>
     </div>
 
     <div class="row">
-      <div class="col-md-4 p-3" *ngFor="let project of projects">
+      <div class="col-md-3 p-3" *ngFor="let project of projects">
         <div class="bg-white rounded-3 border shadow-sm">
           <div class="text-center rounded-top border-bottom border-2">
             <a
@@ -24,7 +24,7 @@
                 "
               >
                 <div class="new text-white">
-                  <div class="px-3 p-3 text-white h6 card-text text-start">
+                  <div class="px-3 p-3 text-white h5 card-text text-start">
                     <strong style="text-decoration: none">{{
                       project.title
                     }}</strong>
@@ -33,7 +33,7 @@
               </div>
             </a>
           </div>
-          <div class="px-3 pt-3 text-secondary h6 card-text">
+          <div class="px-3 pt-3 text-secondary fs-6 card-text">
             <small>
               <p *ngFor="let projectDetail of project.details">
                 {{ projectDetail }}
@@ -53,7 +53,7 @@
             class="card-text lh-sm pb-3 px-3"
             *ngIf="project.demoLink || project.githubLink"
           >
-            <small>
+            <span>
               <ng-container *ngIf="project.demoLink">
                 <a
                   href="{{ project.demoLink }}"
@@ -76,7 +76,7 @@
                   Blog</a
                 >
               </ng-container>
-            </small>
+            </span>
           </div>
         </div>
       </div>

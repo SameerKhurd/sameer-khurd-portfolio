@@ -3,8 +3,10 @@
   padding: 16px 30px;
   min-height: 250px;
   font-family: VarelaRound, Arial, Helvetica, sans-serif;
-  background-color: #296d65ee;
+  //background-color: #296d65ee;
   border-radius: -25px -25px 0% 0%;
+  background: linear-gradient(-45deg, #296d65, #062733);
+  background-size: 200% auto;
 }
 
 .custom-icon {

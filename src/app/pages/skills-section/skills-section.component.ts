@@ -27,7 +27,8 @@ export class SkillsSectionComponent {
     },
     {
       title: 'AWS',
-      skills: 'EC2, S3, CloudWatch, ECS, RDS, Lambda, Textract, EFS, Step-functions, ELB, Route 53 ',
+      skills:
+        'EC2, S3, CloudWatch, ECS, RDS, Lambda, Textract, EFS, Step-functions, ELB, Route 53 ',
     },
     {
       title: 'Database/ORM',
@@ -35,11 +36,28 @@ export class SkillsSectionComponent {
     },
     {
       title: 'Others',
-      skills: 'Firebase, Unit & Integration Testing, Cookie-cutter, Postman, OOP, Clean code, Agile',
+      skills:
+        'Firebase, Unit & Integration Testing, Cookie-cutter, Postman, OOP, Clean code, Agile',
     },
   ];
 
   tools: { label: string; icon: string }[] = [
+    {
+      label: 'HTML',
+      icon: 'html-5-icon.svg',
+    },
+    {
+      label: 'CSS',
+      icon: 'css-3-icon.svg',
+    },
+    {
+      label: 'Node.js',
+      icon: 'nodejs-icon-2.png',
+    },
+    {
+      label: 'Javascript',
+      icon: 'javascript-icon.svg',
+    },
     {
       label: 'Angular',
       icon: 'angular-icon.svg',
@@ -56,21 +74,26 @@ export class SkillsSectionComponent {
       label: 'AWS',
       icon: 'aws-icon.svg',
     },
+
     {
-      label: 'Docker',
-      icon: 'docker-icon.svg',
-    },
-    {
-      label: 'Kubernetes',
-      icon: 'kubernets-icon.svg',
+      label: 'Firebase',
+      icon: 'firebase-icon.png',
     },
     {
       label: 'Microservices',
       icon: 'microservices-icon.png',
     },
     {
-      label: 'Javascript',
-      icon: 'javascript-icon.svg',
+      label: 'Flask',
+      icon: 'flask-icon.svg',
+    },
+    {
+      label: 'MySQL',
+      icon: 'mysql-icon.svg',
+    },
+    {
+      label: 'Docker',
+      icon: 'docker-icon.svg',
     },
     {
       label: 'Git',
@@ -78,32 +101,10 @@ export class SkillsSectionComponent {
     },
 
     {
-      label: 'Flask',
-      icon: 'flask-icon.svg',
-    },
-
-    {
-      label: 'Node.js',
-      icon: 'nodejs-icon-2.png',
-    },
-
-    {
-      label: 'HTML',
-      icon: 'html-5-icon.svg',
-    },
-    {
-      label: 'CSS',
-      icon: 'css-3-icon.svg',
-    },
-
-    {
       label: 'UI/UX',
       icon: 'ui-ux-icon-1.png',
     },
-    {
-      label: 'MySQL',
-      icon: 'mysql-icon.svg',
-    },
+
     {
       label: 'CI/CD',
       icon: 'ci-cd-icon.svg',
