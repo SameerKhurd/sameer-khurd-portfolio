@@ -6,9 +6,14 @@
 }
 
 .ribbbon-polygon {
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 80px), 50% calc(100% - 40px), 0 100%);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 80px),
+    50% calc(100% - 40px),
+    0 100%
+  );
   //clip-path: polygon(0 0, 100% 0, 100% calc(100% - 60px), 50% 100%, 0 calc(100% - 60px));
-
 }
 
 .profile-img {
@@ -60,6 +65,7 @@
   right: 0;
   background-color: #00000080;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 
   overflow: hidden;
   width: 0;

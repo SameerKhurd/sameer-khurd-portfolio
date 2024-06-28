@@ -3,7 +3,7 @@
     <div
       class="d-flex justify-content-center h2 py-1 text-cl text-decoration-underline"
     >
-      <strong>Skills</strong>
+      <span>Skills</span>
     </div>
     <div class="d-flex justify-content-center fs-6 text-secondary">
       <div>
@@ -29,7 +29,7 @@
 
         <table>
           <tr *ngFor="let skillsRow of skillsTables">
-            <td class="text-end p-1 fw-bold cust-text-secondary">
+            <td class="text-end p-1 cust-text-secondary">
               {{ skillsRow.title }}
             </td>
             <td class="ps-5">{{ skillsRow.skills }}</td>
@@ -50,9 +50,9 @@
             src="./assets/images/tool-icons/{{ tool.icon }}"
             alt="{{ tool.label }} icon"
           />
-          <strong class="align-middle mx-auto fs-5 ps-2">{{
+          <span class="align-middle mx-auto fs-5 ps-2">{{
             tool.label
-          }}</strong>
+          }}</span>
         </div>
       </div>
     </div>
