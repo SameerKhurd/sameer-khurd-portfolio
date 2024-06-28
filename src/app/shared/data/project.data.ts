@@ -2,11 +2,29 @@ import { Project } from '../interfaces/project.interface';
 
 export const projects: Project[] = [
   {
-    title: 'AlgoBytes: LeetCode-like Coding Platform [Full Stack]',
+    title: 'ZenMeet: Video Conferencing Platform',
+    endDate: 'Jun 2024',
+    imagePath: 'zenmeet-banner.png',
+    details: [
+      'MS Teams/Zoom/Google Meet like platform, create meeting rooms, video and audio calls, messaging, screen sharing, sending reactions, raise hand.',
+    ],
+    technologies: [
+      'WebRTC',
+      'Pub-Sub channels',
+      'GCP Firestore (NoSQL)',
+      'Angular',
+      'Firebase Hosting',
+    ],
+    demoLink: 'https://zenmeet.web.app/',
+    githubLink: 'https://github.com/SameerKhurd/zen-meet',
+    blog: 'https://medium.com/@sameerkhurd/from-design-to-demo-building-a-full-stack-video-conferencing-platform-like-zoom-microsoft-teams-761ec676d237',
+  },
+  {
+    title: 'AlgoBytes: Scalable Online Judge',
     endDate: 'May 2024',
     imagePath: 'algobytes-banner.png',
     details: [
-      'Full Stack LeetCode-like platform for coding challenges, featuring user, question, code, submission management and execution functionalities, demonstrating scalable system design.',
+      'LeetCode like platform, code submission and execution module, user progress tracking and statistics, question bookmarking, history.',
     ],
     technologies: [
       'GCP Cloud Functions (Serverless)',
@@ -17,14 +35,14 @@ export const projects: Project[] = [
     ],
     demoLink: 'https://algobytes.web.app/',
     githubLink: 'https://github.com/SameerKhurd/algo-bytes',
-    blog: 'https://github.com/SameerKhurd/algo-bytes',
+    blog: 'https://medium.com/@sameerkhurd/from-design-to-demo-building-a-full-stack-leetcode-like-platform-with-system-design-4c86d61f398a',
   },
   {
-    title: 'COVID-19 India Dashboard Cross-Platform App',
+    title: 'COVID-19 India Dashboard Cross-Platform Mobile App',
     endDate: 'Jul 2021',
     imagePath: 'cil_ln_img.png',
     details: [
-      'Cross platform app (iOS, Android, PWA) showing COVID-19 statistics of India, with features like - Cumulative/Daily view, Map view, Sorting options for all categories, and Percentage-wise statistics.',
+      'Cross platform app (iOS, Android, PWA) showing COVID-19 statistics of India, with visualization dashboards, time-based statistics, maps, category filters., and Percentage-wise statistics.',
     ],
     technologies: [
       'Ionic Cross-Platform Framework',

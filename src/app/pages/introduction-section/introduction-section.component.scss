@@ -1,8 +1,14 @@
 .introduction {
   //margin-top: 75px;
-  padding: 16px 50px;
+  //padding: 16px 50px;
   min-height: 250px;
   font-family: VarelaRound, Arial, Helvetica, sans-serif;
+}
+
+.ribbbon-polygon {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 80px), 50% calc(100% - 40px), 0 100%);
+  //clip-path: polygon(0 0, 100% 0, 100% calc(100% - 60px), 50% 100%, 0 calc(100% - 60px));
+
 }
 
 .profile-img {
@@ -27,7 +33,6 @@
 }
 
 .badge-custom {
-  background-color: #eee;
   padding: 8px 14px;
   font-size: small;
   margin: 8px 0px;

@@ -1,115 +1,148 @@
-<div
-  class="bg-cl"
-  style="background-image: url('assets/images/articles/temp.png')"
->
-  <div style="backdrop-filter: blur(15px) invert(80%)">
-    <div class="container">
-      <!-- Introduction -->
-      <div class="introduction mx-2">
-        <div class="row">
-          <div class="col-md-5 fade-in-left">
-            <div class="fade-in-left pt-2">
-              <div class="h2 p-2 fade-in-left text-rotate-color">
-                <div class="display-1 pt-3">Let's</div>
-                <div class="display-6 pt-3">create</div>
-                <div class="display-4 pt-3">something</div>
-                <div class="display-1 pt-3">AMAZING</div>
-                <div class="h1 pt-3">together!</div>
-                <div class="p-4 w-75 mt-5 bg-rotate-color"></div>
-              </div>
+<div class="container">
+  <!-- Introduction -->
+  <div class="introduction mx-2">
+    <div class="d-flex justify-content-between mx-2">
+      <div class="fade-in-left text-nowrap">
+        <div
+          class="fade-in-left ribbbon-polygon p-2 bg-dark pb-5 px-3 me-5 shadow-sm"
+        >
+          <div class="h2 p-2 fade-in-left text-rotate-color">
+            <div class="display-1 pt-3">Let's</div>
+            <div class="display-6 pt-3">create</div>
+            <div class="display-4 pt-3">something</div>
+            <div class="display-1 pt-3">AMAZING</div>
+            <div class="h1 pt-3">together!</div>
+            <div class="p-4 w-75 mt-5 bg-rotate-color"></div>
+          </div>
+          <br />
+          <br />
+        </div>
+      </div>
+
+      <div class="pt-4 text-end fade-in-right">
+        <div class="d-flex justify-content-end">
+          <div
+            class="rounded-circle custom-container profile-img"
+            style="overflow: hidden"
+          >
+            <img
+              class="profile-img"
+              src="./assets/images/profile-picture.png"
+              alt="Profile Picture"
+            />
+            <div class="overlay">
+              <div class="text fs-1">Hey there! 🙋‍♂️</div>
             </div>
           </div>
+        </div>
+        <div class="display-2 pt-4 py-1 text-cl">
+          <strong>Sameer Khurd</strong>
+        </div>
+        <div class="h3 cust-text-secondary p-1">
+          <strong> Full Stack Software Engineer </strong>
+        </div>
 
-          <div class="col-md-7 text-end fade-in-right">
-            <div class="d-flex justify-content-end">
-              <div
-                class="rounded-circle custom-container profile-img"
-                style="overflow: hidden"
-              >
+        <div class="d-flex flex-wrap justify-content-end">
+          <div class="badge-custom bg-light rounded-pill shadow-sm mx-1">
+            <a
+              href="https://www.credly.com/badges/202bc004-6c00-49fd-b2a7-87d5ab1f23ed/public_url"
+              target="_blank"
+              class="text-secondary fs-6"
+              title="Open AWS SAA-03 Certificate"
+            >
+              <img
+                class="icon align-middle"
+                src="./assets/images/icons/award-icon.png"
+                alt="Cerificate icon"
+              />AWS Certified Solutions Archirtect (SAA)</a
+            >&nbsp;
+          </div>
+          &nbsp;&nbsp;
+          <div
+            class="badge-custom fs-6 bg-light rounded-pill text-secondary shadow-sm mx-1"
+            title="M.Tech in Computer Science and Engineering (2021), IIIT-Bangalore"
+          >
+            <img
+              class="icon align-middle"
+              src="./assets/images/icons/graduate-icon.png"
+              alt="Cerificate icon"
+            />M.Tech CS&nbsp; IIIT-Bangalore &nbsp;
+          </div>
+        </div>
+
+        <div class="d-flex flex-wrap pt-3 justify-content-end">
+          <div class="p-1 pe-2" *ngFor="let linkButton of linkButtons">
+            <a
+              [href]="linkButton.url"
+              class="btn btn-light shadow link-button rounded-circle"
+              target="_blank"
+              [title]="linkButton.title"
+            >
+              <ng-container *ngIf="linkButton.isImage; else iconTemplate">
                 <img
-                  class="profile-img"
-                  src="./assets/images/profile-picture.png"
-                  alt="Profile Picture"
+                  class="custom-icon"
+                  [src]="linkButton.iconSrc"
+                  [style.height]="linkButton.size"
+                  [style.width]="linkButton.size"
+                  [style.margin-left]="linkButton.margin"
+                  alt=""
                 />
-                <div class="overlay">
-                  <div class="text fs-1">Hey there! 🙋‍♂️</div>
-                </div>
-              </div>
-            </div>
-            <div class="display-2 pb-1 text-cl">
-              <strong>Sameer Khurd</strong>
-            </div>
-            <div class="h4 text-secondary p-1">
-              <strong> Full Stack Software Engineer </strong>
-            </div>
-
-            <div class="d-flex flex-wrap justify-content-end">
-              <div class="badge-custom bg-light rounded-pill shadow-sm mx-1">
-                <a
-                  href="https://www.credly.com/badges/202bc004-6c00-49fd-b2a7-87d5ab1f23ed/public_url"
-                  target="_blank"
-                  class="text-secondary"
-                  title="Open AWS SAA-03 Certificate"
-                >
-                  <img
-                    class="icon align-middle"
-                    src="./assets/images/icons/award-icon.png"
-                    alt="Cerificate icon"
-                  />AWS Certified Solutions Archirtect (SAA)</a
-                >&nbsp;
-              </div>
-              &nbsp;&nbsp;
-              <div
-                class="badge-custom bg-light rounded-pill text-secondary shadow-sm mx-1"
-                title="M.Tech in Computer Science and Engineering (2021), IIIT-Bangalore"
-              >
-                <img
-                  class="icon align-middle"
-                  src="./assets/images/icons/graduate-icon.png"
-                  alt="Cerificate icon"
-                />M.Tech CS&nbsp; IIIT-Bangalore &nbsp;
-              </div>
-            </div>
-
-            <div class="d-flex flex-wrap pt-3 justify-content-end">
-              <div class="p-1 pe-2" *ngFor="let linkButton of linkButtons">
-                <a
-                  [href]="linkButton.url"
-                  class="btn btn-light shadow link-button rounded-circle"
-                  target="_blank"
-                >
-                  <ng-container *ngIf="linkButton.isImage; else iconTemplate">
-                    <img
-                      class="custom-icon"
-                      [src]="linkButton.iconSrc"
-                      [style.height]="linkButton.size"
-                      [style.width]="linkButton.size"
-                      [style.margin-left]="linkButton.margin"
-                      alt=""
-                    />
-                  </ng-container>
-                  <ng-template #iconTemplate>
-                    <i
-                      class="bi text-secondary"
-                      style="font-size: 1.2rem"
-                      [ngClass]="linkButton.iconSrc"
-                    ></i>
-                  </ng-template>
-                </a>
-              </div>
-            </div>
+              </ng-container>
+              <ng-template #iconTemplate>
+                <i
+                  class="bi text-secondary"
+                  style="font-size: 1.2rem"
+                  [ngClass]="linkButton.iconSrc"
+                ></i>
+              </ng-template>
+            </a>
           </div>
         </div>
-        <br />
-        <br />
-        <br />
-
-        <div class="m-2 p-3 bg-light border rounded-3">
-          <app-article-section></app-article-section>
-        </div>
-
-        <br />
       </div>
     </div>
+    <br />
+    <br />
+    <br />
+
+    <div class="m-2 p-3 bg-light border rounded-3">
+      <app-article-section></app-article-section>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="d-flex justify-content-center">
+      <div
+        class="border-start border-5 px-5 p-2 pt-3 badge-custom shadow-lg fst-italic text-dark border-secondary mx-5"
+        style="backdrop-filter: blur(150px)"
+      >
+        <div class="display-1 float-start">“</div>
+        <div class="text-center fs-3 me-5"><strong> About myself</strong></div>
+        <br />
+        <br />
+        <div class="fs-6 lh-lg">
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; I'm an experienced Full Stack
+          Software Developer with a strong foundation in software development
+          and engineering. My professional expertise includes full-stack
+          development, microservice architecture, API development, system
+          design, web application development, and cloud technologies. As an AWS
+          certified Solutions Architect (SAA), I am proficient in Python,
+          Angular, JavaScript, and Java.
+          <br />
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; I have a demonstrated ability to
+          design and deliver high-quality solutions while effectively
+          collaborating within multidisciplinary teams. I excel in
+          problem-solving and critical thinking. With the ability to quickly
+          familiarise myself with new technologies, I am deeply enthusiastic and
+          passionate about designing and developing robust, scalable solutions,
+          always striving to deliver exceptional experiences to the clients.
+        </div>
+        <div class="display-1 float-end">”</div>
+      </div>
+    </div>
+    <br />
+    <br />
   </div>
 </div>

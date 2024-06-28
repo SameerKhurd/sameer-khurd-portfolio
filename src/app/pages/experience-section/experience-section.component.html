@@ -2,54 +2,71 @@
   <div class="container experience-section">
     <br />
     <div
-      class="d-flex justify-content-center h4 pb-1 text-cl text-decoration-underline"
+      class="d-flex justify-content-center h2 pb-3 text-cl text-decoration-underline"
     >
       <strong>Experience</strong>
     </div>
 
-    <ng-container *ngFor="let experience of experiences">
-      <div class="h5 text-secondary d-inline-block pe-3">
-        <strong>
-          <a
-            [href]="experience.companyWebsite"
-            target="_blank"
-            class="text-secondary"
-            title="Open company website"
-            >{{ experience.company }}</a
-          ></strong
+    <div class="d-flex" *ngFor="let experience of experiences">
+      <div>
+        <a
+          [href]="experience.companyWebsite"
+          target="_blank"
+          title="Open company website"
         >
+          <img
+            class="compoany-logo me-4 align-middle shadow-sm"
+            [src]="experience.companyLogoUrl"
+          />
+        </a>
       </div>
-      <div class="h6 text-secondary d-inline-block">
-        {{ experience.location }}
-      </div>
-      <ng-container>
-        <ul class="timeline-3">
-          <li *ngFor="let role of experience.roles">
-            <div
-              class="d-flex justify-content-between flex-wrap px-1 text-secondary"
-            >
-              <div class="col-md-8 h6">
-                <strong>{{ role.designation }}</strong>
-              </div>
-              <div
-                class="badge h6 custom-bg-secondary rounded-pill f text-secondary"
-              >
-                {{ role.startMonth }} &nbsp; &ndash; &nbsp;{{
-                  role.endMonth
-                }}
-                &nbsp; &nbsp;{{ role.duration }}
-              </div>
-            </div>
+      <div class="pt-2">
+        <div class="h4 text-secondary d-inline-block pe-3">
+          <strong>
+            <a
+              [href]="experience.companyWebsite"
+              target="_blank"
+              class="cust-text-secondary"
+              title="Open company website"
+              >{{ experience.company }}</a
+            ></strong
+          >
+        </div>
+        <div class="h cust-text-secondary d-inline-block">
+          <i class="bi bi-geo-alt px-1"></i>
 
-            <div class="text-secondary">
-              <ul *ngFor="let roleDetail of role.details">
-                <li class="lh-base">{{ roleDetail }}</li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </ng-container>
-      <br />
-    </ng-container>
+          {{ experience.location }}
+        </div>
+        <ng-container>
+          <ul class="timeline-3">
+            <li *ngFor="let role of experience.roles">
+              <div
+                class="d-flex justify-content-between flex-wrap px-1 text-secondary pt-1"
+              >
+                <div class="col-md-8 h5 cust-text-secondary text-uppercase">
+                  <strong>{{ role.designation }}</strong>
+                </div>
+                <div
+                  class="badge h6 custom-bg-secondary rounded-pill fs-5 cust-text-secondary"
+                >
+                  <small>
+                    {{ role.startMonth }} &nbsp; &ndash; &nbsp;{{
+                      role.endMonth
+                    }}</small
+                  >
+                </div>
+              </div>
+
+              <div class="text-secondary pb-3 pe-5 me-3">
+                <ul *ngFor="let roleDetail of role.details">
+                  <li class="lh-base py-2 p-1">{{ roleDetail }}</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </ng-container>
+        <br />
+      </div>
+    </div>
   </div>
 </div>
