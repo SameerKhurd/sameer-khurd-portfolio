@@ -27,9 +27,7 @@
           >
         </li>
         <li class="nav-item px-1">
-          <a class="nav-link" title="Go to experience" href="#experience"
-            >Experience</a
-          >
+          <a class="nav-link" title="Go to skills" href="#skills">Skills</a>
         </li>
         <li class="nav-item px-1">
           <a class="nav-link" title="Go to projects" href="#projects"
@@ -37,9 +35,24 @@
           >
         </li>
         <li class="nav-item px-1">
+          <a class="nav-link" title="Go to experience" href="#experience"
+            >Experience</a
+          >
+        </li>
+
+        <li class="nav-item px-1">
           <a class="nav-link" title="Go to education" href="#education"
             >Education</a
           >
+        </li>
+        <li class="nav-item px-1">
+          <a
+            class="px-1 nav-link"
+            title="Go to blogs"
+            target="_blank"
+            href="https://medium.com/@sameerkhurd"
+            >Blogs
+          </a>
         </li>
         <li class="nav-item px-1">
           <a class="nav-link" title="Go to contact & references" href="#contact"
@@ -50,18 +63,11 @@
     </div>
 
     <a
-      class="px-3 nav-link text-secondary"
-      title="Go to blogs"
-      target="_blank"
-      href="https://medium.com/@sameerkhurd"
-      >Blogs
-    </a>
-    <a
-      class="btn btn-outline-success"
+      class="btn btn-dark px-4 rounded-0 text-rotate-color border-0 shadow-sm"
       title="Go to Contact & References"
       href="#contact"
     >
-      Contact Me
+      <strong>Hire Me!</strong>
     </a>
     <button
       class="navbar-toggler"
@@ -83,30 +89,33 @@
   data-bs-offset="0"
   class="scrollspy-example"
   tabindex="0"
+  style="background-image: url('assets/images/articles/temp.png')"
 >
-  <div id="#">
-    <!-- <app-introduction-section-2></app-introduction-section-2> -->
-    <!-- <app-introduction-section-1></app-introduction-section-1> -->
-    <app-introduction-section></app-introduction-section>
-  </div>
+  <div style="backdrop-filter: blur(15px) invert(80%)">
+    <div id="#">
+      <!-- <app-introduction-section-2></app-introduction-section-2> -->
+      <!-- <app-introduction-section-1></app-introduction-section-1> -->
+      <app-introduction-section></app-introduction-section>
+    </div>
 
-  <div id="skills">
-    <app-skills-section></app-skills-section>
-  </div>
+    <div id="skills">
+      <app-skills-section></app-skills-section>
+    </div>
 
-  <div id="projects">
-    <app-project-section></app-project-section>
-  </div>
+    <div id="projects">
+      <app-project-section></app-project-section>
+    </div>
 
-  <div id="experience">
-    <app-experience-section></app-experience-section>
-  </div>
+    <div id="experience">
+      <app-experience-section></app-experience-section>
+    </div>
 
-  <div id="education">
-    <app-education-section></app-education-section>
-  </div>
-  <div id="contact">
-    <app-contact-section></app-contact-section>
+    <div id="education">
+      <app-education-section></app-education-section>
+    </div>
+    <div id="contact">
+      <app-contact-section></app-contact-section>
+    </div>
   </div>
 </div>
 

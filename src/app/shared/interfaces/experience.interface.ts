@@ -1,5 +1,6 @@
 export interface Experience {
   company: string;
+  companyLogoUrl: string;
   companyWebsite: string;
   location: string;
   roles: {
