@@ -9,17 +9,12 @@ export class SkillsSectionComponent {
   skillsTables: { title: string; skills: string }[] = [
     {
       title: 'Languages',
-      skills: 'Python, Java, C, JavaScript, TypeScript',
-    },
-    {
-      title: 'Frontend',
-      skills:
-        'Angular, Fabric.js, D3.js, HTML, CSS, Bootstrap, Ionic Framework',
+      skills: 'Java, Python, JavaScript, TypeScript, SQL, C',
     },
     {
       title: 'Backend',
       skills:
-        'Connexion, Flask, Node.js, FastAPI, REST API, RabbitMQ, OpenAPI Specification, Nginx',
+        'Flask, Spring Boot, Node.js, FastAPI, Kafka, RabbitMQ, REST API, OpenAPI, Nginx',
     },
     {
       title: 'CI/CD',
@@ -35,9 +30,14 @@ export class SkillsSectionComponent {
       skills: 'MySQL, Postgres, GCP Firestore (NoSQL), SQLALchemy',
     },
     {
+      title: 'Frontend',
+      skills:
+        'Angular, Fabric.js, D3.js, HTML, CSS, Bootstrap, Ionic Framework',
+    },
+    {
       title: 'Others',
       skills:
-        'Firebase, Unit & Integration Testing, Cookie-cutter, Postman, OOP, Clean code, Agile',
+        'Design Patterns, OOP, Firebase, Unit & Integration Testing, Cookie-cutter, Postman, Clean code, Agile',
     },
   ];
 
