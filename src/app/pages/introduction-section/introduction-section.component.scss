@@ -16,6 +16,24 @@
   //clip-path: polygon(0 0, 100% 0, 100% calc(100% - 60px), 50% 100%, 0 calc(100% - 60px));
 }
 
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image2 {
+  position: absolute;
+  max-width: 125px;
+
+  bottom: -15px;
+  right: 0px;
+}
+
 .profile-img {
   width: 100%;
   max-width: 300px;
