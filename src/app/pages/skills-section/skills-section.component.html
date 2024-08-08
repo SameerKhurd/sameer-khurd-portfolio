@@ -11,12 +11,15 @@
           class="text-center py-2 pb-4 d-flex flex-wrap justify-content-center cust-text-secondary"
         >
           <div class="badge-custom rounded-pill shadow-sm m-2 border fs-6">
-            Full Stack Development
+            Backend Development
           </div>
           <div
             class="badge-custom rounded-pill shadow-sm m-2 text-nowrap1 border fs-6"
           >
             Microservice Architecture
+          </div>
+          <div class="badge-custom rounded-pill shadow-sm m-2 border fs-6">
+            Full Stack Development
           </div>
           <div
             class="badge-custom rounded-pill shadow-sm m-2 text-nowrap border fs-6"
@@ -24,8 +27,6 @@
             Cloud Technologies
           </div>
         </div>
-
-
 
         <table>
           <tr *ngFor="let skillsRow of skillsTables">
@@ -50,9 +51,7 @@
             src="./assets/images/tool-icons/{{ tool.icon }}"
             alt="{{ tool.label }} icon"
           />
-          <span class="align-middle mx-auto fs-5 ps-2">{{
-            tool.label
-          }}</span>
+          <span class="align-middle mx-auto fs-5 ps-2">{{ tool.label }}</span>
         </div>
       </div>
     </div>
